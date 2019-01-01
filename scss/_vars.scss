@@ -1,0 +1,27 @@
+/* Layout */
+
+$content-tall-height: 514px;
+$header-footer-tall-height: calc( 50vh - 257px );
+
+$header-footer-tall-height-short: calc( 50vh - 213px );
+$content-tall-height-short: 427px;
+
+/* Fonts */
+$font-main-normal: 'Rubik-Regular';
+$font-main-bold: 'Rubik-Bold';
+$font-main-light: 'Rubik-Light';
+
+$font-size-small: rem(10px);
+$font-size-base: rem(12px);
+$font-size-medium: rem(18px);
+$font-size-large: rem(38px);
+
+/* Text */
+
+$text-shadow: 0 0 3px #ffffff, 0 0 3px #fff, 0 0 3px #ffffff, 0 0 3px #fff;
+
+/* Colors*/
+$color-1: #000;
+$color-2: #B0B0B0;
+$color-3: #fff700;
+$color-4: #F6F6F6;
