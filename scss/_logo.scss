@@ -1,0 +1,53 @@
+.logo {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 124px; 
+    
+    .main {
+        display: block;
+        background-image: url(../../images/logo/main.stroke.svg);
+        z-index: 2;
+        position: absolute;
+        width: 105px;
+        height: 114px;
+        left: 0;
+        top: 6px;
+    }
+    
+    .inner {
+        content: '';
+        background-image: url(../../images/logo/inner.stroke.svg);
+        z-index: 3;
+        display: block;
+        width: 36px;
+        height: 72px;
+        position: absolute;
+        top: 33px;
+        left: 7px;
+    }
+    
+    .outer {
+        content: '';
+        background-image: url(../../images/logo/outer.stroke.svg);
+        z-index: 0;
+        display: block;
+        width: 69px;
+        height: 124px;
+        position: absolute;
+        top: 0;
+        left: 42px;
+    }
+    
+    
+    .line {
+        background-image: url(../../images/logo/red.stroke.svg);
+        z-index: 1;
+        display: block;
+        width: 108px;
+        height: 39px;
+        position: absolute;
+        top: 48px;
+        left: 12px;
+    }
+}

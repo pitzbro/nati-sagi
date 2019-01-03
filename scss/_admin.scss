@@ -1,0 +1,20 @@
+// Tabs
+
+ul.tabs {
+    border-bottom: 1px solid #999;
+    a {
+        background-color: transparent;
+        border: 1px solid #999;
+        border-bottom-color: transparent;
+        position: relative;
+        top: 1px;
+        &:hover {
+            background-color: #dadada;
+        }
+        &.is-active {
+            background-color: transparent;
+            border-color: #999;
+            border-bottom-color: #f6f5f0;
+        }
+    }
+}

@@ -1,8 +1,67 @@
 /* SAMPLE SCSS FILE CONTENTS */
+ul.tabs {
+  border-bottom: 1px solid #999; }
+  ul.tabs a {
+    background-color: transparent;
+    border: 1px solid #999;
+    border-bottom-color: transparent;
+    position: relative;
+    top: 1px; }
+    ul.tabs a:hover {
+      background-color: #dadada; }
+    ul.tabs a.is-active {
+      background-color: transparent;
+      border-color: #999;
+      border-bottom-color: #f6f5f0; }
+
 /* Layout */
 /* Fonts */
 /* Text */
 /* Colors*/
+.logo {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 124px; }
+  .logo .main {
+    display: block;
+    background-image: url(../../images/logo/main.stroke.svg);
+    z-index: 2;
+    position: absolute;
+    width: 105px;
+    height: 114px;
+    left: 0;
+    top: 6px; }
+  .logo .inner {
+    content: '';
+    background-image: url(../../images/logo/inner.stroke.svg);
+    z-index: 3;
+    display: block;
+    width: 36px;
+    height: 72px;
+    position: absolute;
+    top: 33px;
+    left: 7px; }
+  .logo .outer {
+    content: '';
+    background-image: url(../../images/logo/outer.stroke.svg);
+    z-index: 0;
+    display: block;
+    width: 69px;
+    height: 124px;
+    position: absolute;
+    top: 0;
+    left: 42px; }
+  .logo .line {
+    background-image: url(../../images/logo/red.stroke.svg);
+    z-index: 1;
+    display: block;
+    width: 108px;
+    height: 39px;
+    position: absolute;
+    top: 48px;
+    left: 12px; }
+
 * {
   box-sizing: border-box; }
 
