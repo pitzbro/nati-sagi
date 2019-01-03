@@ -1,18 +1,24 @@
 .logo {
     position: relative;
     display: block;
-    width: 120px;
-    height: 124px; 
+    width: 100%;
+    height: 0;
+    padding-top: 103.333%;
+
+    > * {
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
     
     .main {
         display: block;
         background-image: url(../../images/logo/main.stroke.svg);
         z-index: 2;
         position: absolute;
-        width: 105px;
-        height: 114px;
+        width: 87.5%;
+        height: 91.935%;
+        top: 4.838%;
         left: 0;
-        top: 6px;
     }
     
     .inner {
@@ -20,11 +26,11 @@
         background-image: url(../../images/logo/inner.stroke.svg);
         z-index: 3;
         display: block;
-        width: 36px;
-        height: 72px;
+        width: 30%;
+        height: 58%;
         position: absolute;
-        top: 33px;
-        left: 7px;
+        top: 26.612%;
+        left: 5.833%;
     }
     
     .outer {
@@ -32,11 +38,11 @@
         background-image: url(../../images/logo/outer.stroke.svg);
         z-index: 0;
         display: block;
-        width: 69px;
-        height: 124px;
+        width: 57.5%;
+        height: 100%;
         position: absolute;
         top: 0;
-        left: 42px;
+        left: 35%;
     }
     
     
@@ -44,10 +50,10 @@
         background-image: url(../../images/logo/red.stroke.svg);
         z-index: 1;
         display: block;
-        width: 108px;
-        height: 39px;
+        width: 90%;
+        height: 31.451%;
         position: absolute;
-        top: 48px;
-        left: 12px;
+        top: 38.709%;
+        left: 10%;
     }
 }
