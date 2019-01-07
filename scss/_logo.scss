@@ -1,3 +1,33 @@
+.logo-wrapper {
+    &.small {
+        width: 84px;
+    }
+    &.large {
+        width: 176px;
+    }
+}
+
+.logo-wrapper.animated {
+    .logo {
+        animation: logo-wrapper 4s ease-in;
+        -webkit-backface-visibility: hidden;
+        .inner {
+            transform-origin: 100% 50%;
+            animation: logo-inner 4s ease-in;
+            -webkit-backface-visibility: hidden;
+        }
+        .outer {
+            transform-origin: 0% 55%;
+            animation: logo-outer 4s ease-in;
+            -webkit-backface-visibility: hidden;
+        }
+        .line {
+            animation: logo-line 4s ease-in;
+            -webkit-backface-visibility: hidden;
+        }
+    }
+}
+
 .logo {
     position: relative;
     display: block;
@@ -16,7 +46,7 @@
         z-index: 2;
         position: absolute;
         width: 87.5%;
-        height: 91.935%;
+        height: 92.44%;
         top: 4.838%;
         left: 0;
     }

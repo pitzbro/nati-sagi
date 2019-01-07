@@ -2,8 +2,8 @@
 @import 'admin.scss';
 @import 'vars.scss';
 @import 'logo.scss';
+@import 'animations.scss';
 // @import 'fonts.scss';
-// @import 'animations.scss';
 // @import 'functions.scss';
 // @import 'mixins.scss';
 @import 'base.scss';
@@ -13,3 +13,8 @@
 /* Blocks */
 // @import 'header.scss';
 // @import 'footer.scss';
+
+/* Pages */
+@import 'front.scss';
+
+
