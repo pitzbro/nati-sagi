@@ -3,14 +3,14 @@
         width: 84px;
     }
     &.large {
-        width: 176px;
+        width: 140px;
     }
 }
 
-.logo-wrapper.animated {
+.logo-block.animated {
+    animation: logo-wrapper 4s ease-in;
+    -webkit-backface-visibility: hidden;
     .logo {
-        animation: logo-wrapper 4s ease-in;
-        -webkit-backface-visibility: hidden;
         .inner {
             transform-origin: 100% 50%;
             animation: logo-inner 4s ease-in;
@@ -86,4 +86,16 @@
         top: 38.709%;
         left: 10%;
     }
+}
+
+.logo-text {
+    font-family: 'heebo';
+    margin: 0;
+    line-height: 1.1;
+    font-size: 64px;
+    letter-spacing: 2px;
+}
+.logo-menu {
+    margin-right: -30px;
+    font-size: 18px;
 }

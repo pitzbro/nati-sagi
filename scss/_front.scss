@@ -1,8 +1,66 @@
 body.path-frontpage {
     background: #fff;
+
+    .dialog-off-canvas-main-canvas {
+        max-width: 700px;
+        margin: 46px auto 0;
+    }
     
     .main-layout {
         background: #fff;
         border: none;
     }
+
+    header {
+        margin-bottom: 46px;
+    }
+
+    .logo-block {
+        @include for-normal-layout {
+            margin-right: -16px;
+        }
+    }
 }
+
+// Front Page Menu
+
+.front-page-menu {
+
+    ul.menu {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 0 rem(46px);
+    }
+
+    li.menu-item {
+        a {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            font-family: 'heebo';
+            width: 136px;
+            height: 136px;
+            padding: 12px 0;
+            font-size: 14px;
+            border: solid 1px $clr4;
+            border-radius: 20px;
+            color: #E24739;
+            background-repeat: no-repeat;
+            background-position: center 26px;
+            background-size: 62px;
+
+            &.polygraph-link {
+                background-image: url($polygraph-icon);
+            }
+
+            &.investigations-link {
+                background-image: url($investigation-icon);
+            }
+
+            &.blog-link {
+                background-image: url($blog-icon);
+            }
+        }
+    }
+}
+
