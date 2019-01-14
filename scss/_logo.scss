@@ -92,10 +92,16 @@
     font-family: 'heebo';
     margin: 0;
     line-height: 1.1;
-    font-size: 64px;
-    letter-spacing: 2px;
+    font-size: rem(66px);
+    letter-spacing: rem(2px);
+    // @include for-mobile-layout {
+    //     font-size: rem(56px);
+    // }
 }
 .logo-menu {
-    margin-right: -30px;
-    font-size: 18px;
+    margin-right: rem(-30px);
+    font-size: rem(18px);
+    @include for-mobile-layout {
+        font-size: rem(14px);
+    }
 }
