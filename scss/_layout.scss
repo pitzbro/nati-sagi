@@ -1,3 +1,8 @@
+.dialog-off-canvas-main-canvas {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 .main-layout {
     background-color: #F6F5F0;
     border-right-width: 4px;
@@ -12,4 +17,23 @@
     border-left-style: solid;
     border-top-color: #F6F5F0;
     border-left-color: #F6F5F0;
+    
+    .region-content {
+        width: 100% !important;
+        margin: 0 !important;
+        > * {
+            padding: 0 30px;
+        }
+    
+    }
+    // body.polygraph & {
+    //     background-image: url('../../images/top_bar/top_polygraph.jpg')
+    // }
+    // body.investigation & {
+    //     background-image: url('../../images/top_bar/top_investigation.jpg')
+    // }
+}
+
+header {
+    margin: 40px 0 6px;
 }

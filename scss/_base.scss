@@ -15,15 +15,15 @@ body {
 }
 
 ::-moz-selection { /* Code for Firefox */
-    // color: #fff;
-    background: $clr3;
-    text-shadow: none;
+  color: #fff;
+  background: $clr2;
+  text-shadow: none;
 }
 
 ::selection {
-    // color: #fff;
-    background: $clr3;
-    text-shadow: none;
+  color: #fff;
+  background: $clr2;
+  text-shadow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {

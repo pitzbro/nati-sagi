@@ -7,23 +7,26 @@
     }
 }
 
-.logo-block.animated {
-    animation: logo-wrapper 4s ease-in;
-    -webkit-backface-visibility: hidden;
-    .logo {
-        .inner {
-            transform-origin: 100% 50%;
-            animation: logo-inner 4s ease-in;
-            -webkit-backface-visibility: hidden;
-        }
-        .outer {
-            transform-origin: 0% 55%;
-            animation: logo-outer 4s ease-in;
-            -webkit-backface-visibility: hidden;
-        }
-        .line {
-            animation: logo-line 4s ease-in;
-            -webkit-backface-visibility: hidden;
+.logo-block {
+    font-family: 'heebo';
+    .animated {
+        animation: logo-wrapper 4s ease-in;
+        -webkit-backface-visibility: hidden;
+        .logo {
+            .inner {
+                transform-origin: 100% 50%;
+                animation: logo-inner 4s ease-in;
+                -webkit-backface-visibility: hidden;
+            }
+            .outer {
+                transform-origin: 0% 55%;
+                animation: logo-outer 4s ease-in;
+                -webkit-backface-visibility: hidden;
+            }
+            .line {
+                animation: logo-line 4s ease-in;
+                -webkit-backface-visibility: hidden;
+            }
         }
     }
 }
@@ -89,18 +92,22 @@
 }
 
 .logo-text {
-    font-family: 'heebo';
     margin: 0;
     line-height: 1.1;
     font-size: rem(66px);
     letter-spacing: rem(2px);
-    // @include for-mobile-layout {
-    //     font-size: rem(56px);
-    // }
+    .small-logo & {
+        line-height: 1;
+        font-size: rem(42px);
+    }
 }
 .logo-menu {
     margin-right: rem(-30px);
     font-size: rem(18px);
+    .small-logo & {
+        font-size: rem(14px);
+        margin-right: rem(0px);
+    }
     @include for-mobile-layout {
         font-size: rem(14px);
     }
