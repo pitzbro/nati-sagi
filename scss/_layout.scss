@@ -26,14 +26,14 @@
         }
     
     }
-    // body.polygraph & {
-    //     background-image: url('../../images/top_bar/top_polygraph.jpg')
-    // }
-    // body.investigation & {
-    //     background-image: url('../../images/top_bar/top_investigation.jpg')
-    // }
 }
 
 header {
     margin: 40px 0 6px;
+}
+
+.page-image img {
+    padding: 10px;
+    background-color: #FFF;
+    border: 1px solid #777868;
 }
