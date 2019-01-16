@@ -4,3 +4,41 @@
     list-style: none
 }
 
+// Main Menu //
+
+.main-menu {
+
+    font-family: 'heebo';
+    font-size: rem(20px);
+    
+    ul.menu {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    li.menu-item {
+        &.menu-item--active-trail {
+            order: -1;
+        }
+        &:not(:last-child)::after {
+            content: '|';
+            margin-left: 6px;
+            padding-left: 6px;
+        }
+        a {
+            color: $clr1;
+            font-size: rem(18px);
+            &.is-active {
+                font-family: 'heebo-medium';
+                font-size: rem(20px);
+                &:hover {
+                    color: inherit;
+                }
+            }
+            &:hover {
+                color: $clr3;
+            }
+        }
+    }
+}
