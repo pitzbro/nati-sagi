@@ -8,7 +8,7 @@
 
 .main-menu {
 
-    font-family: 'heebo';
+    font-family: 'heebo-medium';
     font-size: rem(20px);
     
     ul.menu {
@@ -55,10 +55,10 @@
         background: $clr5;
         color: #fff;
         body.polygraph & {
-            margin: 18px 0 18px 120px;
+            margin: 18px 0 0 120px;
         }
         body.investigation & {
-            margin: 18px 0 18px 110px;
+            margin: 18px 0 0 110px;
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 18px 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 18px 100%);
         }
@@ -77,10 +77,7 @@
             display: inline-block;
             border-left: 1px solid rgba(255, 255, 255, 0.38);
             transition: background .3s;
-            &:hover {
-                background: $clr3
-            }
-            &.is-active {
+            &.is-active, &:hover {
                 background-color: rgba($clr1, .3);
             }
         }

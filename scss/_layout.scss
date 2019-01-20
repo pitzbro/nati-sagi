@@ -17,6 +17,7 @@
     border-left-style: solid;
     border-top-color: #F6F5F0;
     border-left-color: #F6F5F0;
+    padding-bottom: 40px;
     
     .region-content {
         width: 100% !important;
@@ -36,4 +37,12 @@ header {
     padding: 10px;
     background-color: #FFF;
     border: 1px solid #777868;
+}
+
+.layout__region--first {
+    border-right: 1px solid $clr5;
+    padding-right: 26px;
+}
+.layout__region--second {
+    padding-right: 60px;
 }
