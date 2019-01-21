@@ -13,12 +13,16 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
     }
     .logo-info {
         flex: 1;
         text-align: end;
         margin: 0;
+        a {
+            color: inherit;
+            font-family: heebo-medium;
+        }
     }
     .animated {
         animation: logo-wrapper 4s ease-in;

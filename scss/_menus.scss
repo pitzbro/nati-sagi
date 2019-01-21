@@ -39,7 +39,8 @@
             color: $clr1;
             font-size: rem(18px);
             &:hover {
-                color: rgba($clr3, .7);
+                // color: rgba($clr3, .7);
+                color: $clr2;
             }
         }
     }

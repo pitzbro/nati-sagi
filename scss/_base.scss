@@ -16,22 +16,32 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
   color: #fff;
-  background: $clr1;
+  background: $clr5;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: $clr1;
+  background: $clr5;
   text-shadow: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin: 0 0 0.5em;
+  font-weight: normal;
+  font-family: 'heebo-medium';
+}
+
+h2, h3, h4, h5, h6 {
+  color: $clr5;
 }
 
 small {
   font-size: rem(12px);
+}
+
+p {
+  margin-top: 0;
 }
 
 a {
@@ -43,6 +53,46 @@ a {
         cursor: default;
     }
   }
+}
+
+q, blockquote {
+  quotes:  "”" "“" "'" "'";
+  font-size: rem(20px);
+  font-family: 'heebo-bold';
+  color: #aca573;
+  margin: rem(16px) 0 rem(4px);
+  display: inline-block;
+}
+
+blockquote:before {
+  content: open-quote;
+  margin-left: -4px;
+  position: relative;
+  top: 10px;
+  font-family: 'heebo';
+  font-size: 31px;
+  line-height: 0;
+}
+blockquote:after {
+  content: close-quote;
+  margin-right: -4px;
+  position: relative;
+  top: 10px;
+  font-family: 'heebo';
+  font-size: 31px;
+  line-height: 0;
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
+
+
+.quote-author {
+  font-style: italic;
 }
 
 

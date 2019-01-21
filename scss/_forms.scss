@@ -1,6 +1,10 @@
-input[type="text"], input[type="search"] {
+input[type="text"], input[type="search"], input[type="email"], textarea {
     border: 1px solid $clr3;
     color: $clr4;
     border-radius: 5px;
     padding: 4px 6px;
+}
+
+textarea {
+    padding: 18px;
 }

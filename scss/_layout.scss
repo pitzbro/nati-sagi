@@ -1,6 +1,10 @@
 .dialog-off-canvas-main-canvas {
-    max-width: 1024px;
+
     margin: 0 auto;
+    max-width: 860px;
+    @include for-wide-layout {
+        max-width: 1024px;
+    }
 }
 
 .main-layout {
@@ -17,7 +21,7 @@
     border-left-style: solid;
     border-top-color: #F6F5F0;
     border-left-color: #F6F5F0;
-    padding-bottom: 40px;
+    padding-bottom: 90px;
     
     .region-content {
         width: 100% !important;

@@ -1,12 +1,32 @@
-footer {
-  .contact-block {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 20px;
-    margin: 20px;
-    z-index: 150;
+.region-footer {
+  nav.navigation > ul.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px auto 80px;
+    max-width: 860px;
+
+    ul {
+      margin: 0;
+    }
+    
+    li {
+      padding: 0;
+      &.menu-item--expanded {
+        list-style-image: none;
+        list-style-type: none;
+        
+      }
+    }
+
+    > li > a {
+      font-size: rem(16px);
+      font-family: 'heebo-medium';
+      display: inline-block;
+      margin-bottom: rem(10px);
+    }
+
+    a {
+      color: inherit;
+    }
   }
 }
-
-.construction footer.section-footer { display: none; }
