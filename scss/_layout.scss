@@ -28,6 +28,14 @@
         margin: 0 !important;
         > * {
             padding: 0 30px;
+            &.messages--status {
+                position: relative;
+                top: 32px;
+                padding: 20px 30px;
+                box-shadow: none;
+                margin: 0 20px;
+                border-right: solid 1px #c9e1bd;
+            }
         }
     
     }
@@ -45,8 +53,35 @@ header {
 
 .layout__region--first {
     border-right: 1px solid $clr5;
-    padding-right: 26px;
+    padding: 0 26px 0 0;
+    body.node--type-web-form-page & {
+        border-right: none;
+        padding: 0 0 0 26px;
+    }   
 }
 .layout__region--second {
-    padding-right: 60px;
+    padding: 0 60px 0 0;
+    body.node--type-web-form-page & {
+        padding: 0 26px 0 0;
+    }
+}
+
+.layout__region--top {
+    margin-bottom: rem(14px);
+}
+
+.pager__items {
+    margin: 30px 0 0;
+    text-align: start;
+    padding: 0;
+    a {
+        color: inherit;
+        &:hover {
+            color: $clr2;
+        }
+    }
+    .pager__item.is-active {
+        font-weight: normal;
+        font-family: 'heebo-bold';
+    }
 }

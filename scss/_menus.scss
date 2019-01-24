@@ -24,7 +24,7 @@
         &.menu-item--active-trail {
             order: -1;
         }
-        &:not(:last-child)::after {
+        &::after {
             content: '|';
             margin-left: 6px;
         }

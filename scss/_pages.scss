@@ -1,0 +1,46 @@
+// Contact
+
+.web-from-info {
+    background-color: #F7F3EE;
+    padding: 16px 30px 26px;
+    border: solid 1px #777868;
+    position: relative;
+    margin-right: 60px;
+    border-right: none;
+    font-size: rem(12px);
+    
+    
+    margin-bottom: rem(20px);
+
+    &::before, &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        height:100%;
+        position: absolute;
+        top: -1px;
+    }
+    &::before {
+        left: 100%;
+        border: solid 1px #777868;
+        border-left-style: dashed;
+        background-color: #EEECE0;
+    }
+    &::after {
+        left: calc(100% + 2px);
+        background-repeat: no-repeat;
+        background-position: right top;
+
+        
+    }
+    &.phone-block::after {
+        background-image: url('http://natisagi.com/images/contactIconPhone2.gif');
+    }
+    &.adress-block::after {
+        background-image: url('http://natisagi.com/images/contactIconMail2.gif');
+    }
+
+    h3 {
+        margin-bottom: rem(14px);
+    }
+}

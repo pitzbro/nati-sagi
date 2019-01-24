@@ -78,14 +78,29 @@
     margin: 0;
   }
 
-  .form-actions {
-    margin-right: -4px;
+  .form-type-search {
+    width: 160px;
   }
-  .form-search {
+
+  .search-block-form {
+    form {
+      display: flex;
+    }
+  }
+  .form--inline {
+    display: inline-flex;
+    .form-item {
+      margin: 0;
+    }
+  }
+  .form-text {
     line-height: 18px;
+    font-size: rem(12px);
     margin: 0;
     border-radius: 0 5px 5px 0;
-    padding: 4px 6px;
+    box-sizing: border-box;
+    border-left: none;
+    max-width: 150px;
   }
   .form-submit {
     line-height: 22px;
