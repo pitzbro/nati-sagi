@@ -6,7 +6,7 @@ input[type="text"], input[type="search"], input[type="email"], input[type="tel"]
     width: 100%;
     max-width: 500px;
     &.required {
-        border-color: rgba($clr2, .4);
+        border-color: rgba($clr1, .7);
     }
 }
 
