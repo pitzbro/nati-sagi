@@ -18,6 +18,9 @@
         list-style-type: none;
         
       }
+      &:last-child {
+        display: none;
+      }
     }
 
     > li > a {

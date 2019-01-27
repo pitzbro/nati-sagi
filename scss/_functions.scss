@@ -1,5 +1,6 @@
 $mobile-breakpoint: 520px;
-$narrow-breakpoint: 732px;
+$two-column-breakpoint: 640px;
+$narrow-breakpoint: 860px;
 $wide-breakpoint: 1060px;
 // $narrow-height-breakpoint: 550px;
 // $normal-height-breakpoint: 750px;
@@ -24,6 +25,18 @@ $wide-breakpoint: 1060px;
     @content;
   }
 }
+
+@mixin two-column-layout {
+  @media (min-width: $two-column-breakpoint) {
+    @content;
+  }
+}
+
+// @mixin for-narrow-layout {
+//   @media (min-width: $narrow-breakpoint) {
+//     @content;
+//   }
+// }
 
 /* Size Functions */
 

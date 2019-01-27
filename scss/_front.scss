@@ -1,4 +1,5 @@
 body.path-frontpage {
+
     background: #fff;
 
     .dialog-off-canvas-main-canvas {
@@ -10,10 +11,15 @@ body.path-frontpage {
     .main-layout {
         background: #fff;
         border: none;
+        padding-bottom: 0;
     }
 
     header {
         margin-bottom: 46px;
+        @include for-mobile-layout {
+            margin: 20px 0;
+        }
+
     }
 
     .region-header {
@@ -21,6 +27,9 @@ body.path-frontpage {
         justify-content: center;
         @include for-normal-layout {
             justify-content: flex-start;
+        }
+        @include for-mobile-layout {
+            transform: scale(.9);
         }
     }
 
@@ -93,6 +102,10 @@ body.path-frontpage {
 
             &:hover {
                 box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25);
+            }
+
+            @include for-mobile-layout {
+                font-size: rem(12px);
             }
         }
     }

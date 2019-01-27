@@ -97,3 +97,12 @@
 a.more-link {
   margin: 0 5px;
 }
+
+//  Mobile  //
+
+.not-for-mobile {
+  display: none;
+  @include for-normal-layout {
+    display: block;
+  }
+}
